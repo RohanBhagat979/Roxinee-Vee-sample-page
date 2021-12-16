@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    font-family:'Roboto', sans-serif ;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/profilePic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* navbar starts */
+
+
+nav{
+    width: 90%;
+    margin: 0em auto;
+    padding: 2em 0em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brandTitle{
+    font-size: 3rem;
+}
+.navlinks ul{
+    display: flex;
+    list-style-type: none;
+}
+.navlinks a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.8em 1em;
+}
+
+/* navbar ends */
+
+
+
+.introSection{
+    width: 60%;
+    height: 500px;
+    margin: 0em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+.introSection h1{
+    font-size: 3rem;
+    margin-bottom: 1.3em;
+    
+}
+.introSection div{
+    font-size: 1.5rem;
+    line-height: 1.6em;
+    margin-bottom: 2em;
+}
+
+/* main starts */
+main{ 
+    width: 50%;
+    margin: 0em auto;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+section {
+    margin-bottom: 7em;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+    font-weight: 400;
+}
+p{
+    margin: 0.8em auto;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+
+/* My Latest Writing starts */
+
+.latestWritingWrap{
+    margin: 2em 0em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.imgWrap{
+    width: 29%;
+}
+.imgWrap img{
+    width: 100%;
+    height: 140px;
+}
+.articleInfo{
+    width: 67%;
+}
+.articleInfo h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.articleInfo p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin: 0.5em 0em;
+}
+.articleInfo a{
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(48, 86, 255);
+    text-decoration: none;
+}
+/* My Latest Writing ends */
+
+/* main ends */
+
+/* keepInTouch starts*/
+
+.keepInTouch{
+    background-color: blanchedalmond;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.keepInTouchInfo{
+    width: 60%;
+    margin: 0em auto;
+    padding: 4em 0em;
+    text-align: center;
+}
+.emailInfo{
+    margin: 2em 0em;
+}
+.emailInfo input{
+    width: 25%;
+    height: 46px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+.emailInfo button{
+    margin-left: 1em;
+    padding: 1em 2em;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* keepInTouch ends*/
+
+
+
+
+.toggleBtn{
+    
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+.bar{
+    width: 100%;
+    color: white;
+    background-color: white;
+    height: 3px;
+}
+
+@media (max-width:600px) {
+    /* navBar starts */
+    nav{
+        width: 100%;
+        padding: 2em 0em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .navlinks{
+        width: 100%;
+        display: none;
+        /* change here */
+    }
+    .navlinks ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: rgb(122, 138, 91);
+        opacity: 0.8;
+    }
+    .navlinks li{
+        width: 100%;
+        text-align: center;
+        padding: 1em 0em;
+    }
+    .toggleBtn{
+        display: flex;
+    }
+    .active{
+        display: flex;
+    }
+    /* navBar ends */
+    .introSection{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main{ 
+        width: 90%;
+        margin: 0em auto;
+        margin-top: 5em;
+        margin-bottom: 3em;
+    }
+    .keepInTouchInfo{
+        width: 90%;
+    }
+    .emailInfo input{
+        display: block;
+        width: 100%;
+        margin: 1em auto;
+        height: 46px;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding-left: 5px;
+    }
+}
